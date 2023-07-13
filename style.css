@@ -25,6 +25,7 @@ header {
     background: var(--fill, #172339);
     backdrop-filter: blur(2px);
     position: fixed;
+    
 
 }
 
@@ -62,6 +63,7 @@ nav {
     justify-content: space-between  ;
 }
 
+/*inicia o pesquisa*/
 .container-1{    /*Menu pesquisa site de referência https://webdesign.tutsplus.com/tutorials/css-experiments-with-a-search-form-input-and-button--cms-22069*/
     width: 300px;
     vertical-align: middle;
@@ -104,28 +106,33 @@ nav {
     position: absolute;
     top: 50%;
     margin-left: 17px;
-    margin-top: 17px;
+    margin-top: 15px;
     z-index: 1;
     color: #4f5b66;
   }
 
   .container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
     outline:none;
-    background: #ffffff;
+    background: #4f5b66; /*cor ao colocar o mouse no pesquisa*/
   }
+/*fim do pesquisa*/
 
-header img {
+hr {
+    width: 1072px;
+    height: 1px;
+    color: #5A616F;;
+}
+
+header img { /*espaçamentos da logo*/
 
 width: 88.131px;
 height: 63px;
 flex-shrink: 0;
+margin-left: 112px;
 
 }
 
-nav .logo {
 
-    
-}
 
 main {
 
@@ -133,10 +140,47 @@ main {
 
 }
 
+
+/*inicio do carrorel*/
+
+section .container__carrocel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 176px;
+
+  
 }
 
-header {
-    display: flex;
-    justify-content:space-evenly;
-    padding: 2rem;
-    }
+.imagem__carrocel img { /*imagem grande*/
+    width: 904px;
+    height: 410px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    border: 1px solid var(--borda, #1E2D55);
+    background: linear-gradient(35deg, rgba(0, 0, 0, 0.94) 35.06%, rgba(0, 0, 0, 0.00) 94.61%), linear-gradient(360deg, #18181A 4.78%, rgba(24, 24, 26, 0.77) 25.52%, rgba(24, 24, 26, 0.60) 44.79%, rgba(24, 24, 26, 0.44) 67.19%, rgba(37, 43, 45, 0.00) 100%);
+
+}
+aside{
+    height: 410px;
+}
+
+aside img {  /*três imagens pequenas*/
+    width: 280px;
+    height: 120px;
+    flex-shrink: 0;
+    display: block;
+    
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 3px;
+    border: 1px solid var(--borda, #1E2D55);
+    background: #172339;
+}
+
+/*inicio do corpo da página*/
+
+.top10 {
+    justify-content: center;
+}
