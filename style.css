@@ -11,14 +11,14 @@
 }
 
 body {  /*tamanho da págian inteira com a cor de fundo degrade*/
-    width: 1440px;
+    width: 1920px; /*tamanho do monitor que se usa o meu é de 27p*/
     height: 2328px;
     background: linear-gradient(180deg, #141E30 0%, #243B55 100%);
 }
 
 header {
     padding: 16px 0;
-    width: 100%;
+    width: 1920px;   /*tamanho do monitor que se usa o meu é de 27p*/
     height: 88px;
     flex-shrink: 0;
     border-bottom: 1px solid var(--borda, #1E2D55);
@@ -28,6 +28,15 @@ header {
     
 
 }
+
+header img { /*espaçamentos da logo*/
+
+    width: 88.131px;
+    height: 63px;
+    flex-shrink: 0;
+    margin-left: 112px;
+    
+    }
 
 header nav li {
     display: inline;
@@ -117,70 +126,101 @@ nav {
   }
 /*fim do pesquisa*/
 
+/*inicio das linhas do hr*/
 hr {
+    display: block;
+    margin-top: 76.5px;
+    margin-bottom: 178.5px;
+    margin-left: auto;
+    margin-right: auto;
     width: 1072px;
-    height: 1px;
-    color: #5A616F;;
+	border: 1px solid; 
+    border-color: #5A616F;
 }
+/*fim das linhas do hr*/
 
-header img { /*espaçamentos da logo*/
-
-width: 88.131px;
-height: 63px;
-flex-shrink: 0;
-margin-left: 112px;
-
-}
-
-
-
-main {
-
-    background: linear-gradient(180deg, #141E30 0%, #243B55 100%);
-
-}
 
 
 /*inicio do carrorel*/
 
-section .container__carrocel {
+ .container__carrocel {
     display: flex;
-    flex-direction: row;
+    
     justify-content: center;
-    align-items: center;
+    
     padding-top: 176px;
-
+    gap: 32px;
   
 }
 
 .imagem__carrocel img { /*imagem grande*/
     width: 904px;
-    height: 410px;
+    height: 418px;
     flex-shrink: 0;
     border-radius: 3px;
     border: 1px solid var(--borda, #1E2D55);
     background: linear-gradient(35deg, rgba(0, 0, 0, 0.94) 35.06%, rgba(0, 0, 0, 0.00) 94.61%), linear-gradient(360deg, #18181A 4.78%, rgba(24, 24, 26, 0.77) 25.52%, rgba(24, 24, 26, 0.60) 44.79%, rgba(24, 24, 26, 0.44) 67.19%, rgba(37, 43, 45, 0.00) 100%);
-
-}
-aside{
-    height: 410px;
+    
 }
 
-aside img {  /*três imagens pequenas*/
+
+.img__lateral  {  /*três imagens pequenas*/
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex-shrink: 0;
+
+}
+
+.img__lateral img {
     width: 280px;
     height: 120px;
-    flex-shrink: 0;
-    display: block;
-    
-    flex-direction: column;
-    justify-content: space-evenly;
     border-radius: 3px;
     border: 1px solid var(--borda, #1E2D55);
     background: #172339;
+
 }
+/* fim do carrorel*/
 
 /*inicio do corpo da página*/
 
-.top10 {
-    justify-content: center;
+h1 {    /*comando para todos os h1*/
+    width: 116px;
+    height: 25px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 44.444% */
+    text-transform: capitalize;
+    padding: 60px;
+    
+    
+}
+
+.container__corpo  {
+  
+    display: flex;
+    flex-flow: column wrap;
+   
+    
+}
+
+{
+ 
+   
+}.poster__top10 .p
+.img__top10 {
+    display: flex;
+    flex-flow: wrap;
+    gap: 32px;
+    flex-shrink: 0;
+}
+.img__top10 img {
+    width: 176px;
+    height: 229px;
+    flex-shrink: 0;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
