@@ -67,7 +67,8 @@ header nav li a {
 header .container { /*alinhamento do menu lado a lado e centro*/
     display: flex;
     align-items: center;
-    justify-content: space-between  ;
+    justify-content: space-between;
+    padding-top: 10px;
 }
 
 nav {
@@ -273,5 +274,21 @@ footer {
     flex-shrink: 0; 
     border-bottom: 1px solid var(--borda, #1E2D55);
     background: #172339;
+    
+}
+footer h3 {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 160% */
+    text-transform: uppercase;
+}
+footer i {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
     
 }
